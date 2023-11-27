@@ -1,0 +1,146 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>MOODYMUN XII</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="conference.html">CONFERENCE</a></li>
+                    <li><a href="committees.html">COMMITTEES</a></li>
+                    <li><a href="keynote.html">KEYNOTE SPEAKER</a></li>
+                    <li><a href="charity.html">CHARITY</a></li>
+                    <li><a href="secretariat.html">SECRETARIAT</a></li>
+                    <li><a href="register.html">REGISTER</a></li>                    
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="whatismun.html">MUN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Moody Model United Nations</h1>
+        <p>Twelfth Iteration - March 15th & 16th</p>   
+        <a href="register.html" class="hero-btn">GET STARTED NOW</a>
+    </div>
+    
+    </section>
+
+
+
+
+
+
+
+    <section class="course">
+        
+        <h1>Countdown Timer</h1>
+        <p>________________</p>
+        <p>Get ready delegates! MOODYMUN starts in. . .</p>
+        <p> </p>
+        <p> </p>
+
+        <div class="launch-time">
+            <div>
+                <p id="days">00</p>
+                <span>Days</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+
+    <script>
+        var countDownDate = new Date("Mar 15, 2024 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 80 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        },1000);
+    </script>
+</section>
+
+
+
+
+
+
+
+    
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+    
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <img src="images/united-nations-logo.png">
+        
+        <h4>MMSMUNXII</h4>
+        <p>Designed and Developed by Shanshan Liu</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i> 
+            <i class="fa fa-twitter"></i> 
+            <i class="fa fa-instagram"></i>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+</html>
